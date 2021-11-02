@@ -4,14 +4,14 @@ import Home from "./Home";
 import Destination from "./Destination";
 import Crew from "./Crew";
 import Technology from "./Technology";
-import data from "../data.json";
-import './App.css';
+import data from "./data.json";
+import "./App.css";
 
 class App extends Component {
     render() {
       const {destination, crew, technology} = data;
         return (
-            <Switch>
+            <Switch className="App">
               <Route exact path ="/" render={(routeProps)=><Home {...routeProps} />} />
               <Route exact path ="/destination" render={(routeProps)=><Destination {...routeProps} info={destination} />} />
               <Route exact path ="/crew" render={(routeProps)=><Crew {...routeProps} info={crew} />} />
