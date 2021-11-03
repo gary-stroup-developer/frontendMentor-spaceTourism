@@ -16,7 +16,7 @@ class Navbar extends Component {
                                 <NavLink exact to="/" className="navLink-link" activeClassName="selected"><span className="navLink-span">00</span> Home</NavLink>
                             </li>
                             <li className="navabr-item">
-                                <NavLink exact to="/destination" className="navLink-link" activeClassName="selected"><span className="navLink-span">01</span> Destination</NavLink>
+                                <NavLink exact to="/destination/:place" className="navLink-link" activeClassName="selected"><span className="navLink-span">01</span> Destination</NavLink>
                             </li>
                             <li className="navabr-item">
                                 <NavLink exact to="/crew" className="navLink-link" activeClassName="selected"><span className="navLink-span">02</span> Crew</NavLink>
