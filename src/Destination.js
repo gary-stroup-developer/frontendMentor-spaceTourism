@@ -2,11 +2,16 @@ import React, {Component} from "react";
 import Navbar from "./Navbar";
 import {NavLink} from "react-router-dom";
 import "./Destination.css";
+import moon from './assets/destination/moon.png';
+import mars from './assets/destination/mars.png';
+import europa from './assets/destination/europa.png';
+import titan from './assets/destination/titan.png';
 
 
 class Destination extends Component {
     render() {
         const {name, description, distance, travel} = this.props.detail;
+        const images = {Moon:moon,Mars:mars,Europa: europa,Titan:titan};
 
         return (
             <div className="Destination"style={{backgroundColor: "gray"}}>
@@ -23,12 +28,14 @@ class Destination extends Component {
                         ))
                     } </div>
                     <div>
-                        <image src={this.props.detail.images.png} alt={name} />
+                        <img src= {images[name]} alt={name} />
+                        
                         <div>
                             <p>{this.props.detail ? name : ""}</p>
                             <p>{this.props.detail ? description : ""}</p>
                             <p>{this.props.detail ? distance : ""}</p>
                             <p>{this.props.detail ? travel : ""}</p>
+                           
                         </div>
                     </div>
                  

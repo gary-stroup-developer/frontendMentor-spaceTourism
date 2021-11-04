@@ -7,6 +7,8 @@ import Technology from "./Technology";
 import data from "./data.json";
 import "./App.css";
 
+
+
 class App extends Component {
     render() {
 

@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import Navbar from "./Navbar";
 import background from "./assets/home/background-home-desktop.jpg";
 import "./Home.css";
+
+
 class Home extends Component {
 
     render() {
