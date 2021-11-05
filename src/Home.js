@@ -1,25 +1,13 @@
 import React, {Component} from "react";
 import Navbar from "./Navbar";
-import background from "./assets/home/background-home-desktop.jpg";
 import "./Home.css";
 
 
 class Home extends Component {
 
     render() {
-        const style = {
-            backgroundImage: `url(${background})`,
-            backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
-            backgroundPosition: "left top",
-            backgroundSize: "cover",
-            height: "100vh",
-            color: "white"
-
-        }
-
         return (
-            <div className="Home"style={style}>
+            <div className="Home">
                 <Navbar />
                 <div className="Home-tagline-container">
                     <div className="Home-tagline">
