@@ -7,7 +7,6 @@
     height: 100vh;
     color: #FAFAFA;
     padding-top: 50px;
-    overflow: scroll;
 }
 
 .Destination-image-container {
@@ -76,7 +75,6 @@
 
 .Destination-info-fact {
     text-transform: uppercase;
-  
 }
 
 .Destination-info-fact-title{
@@ -105,5 +103,37 @@
         position:relative;
         margin-top: 50px;
         margin-left: 0;
+    }
+
+    .Destination{
+        height: 200vh;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .Destination{
+        padding: 0 20px;
+    }
+
+    .Destination-image{
+        margin-left: 0;
+    }
+
+    .Destination-navigation-details {
+        padding: 10px;
+    }
+
+    .Destination-info {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 375px;
+    }
+
+    .hr {
+        width: 375px;
+    }
+     
+    .Destination-info-fact-container {
+        justify-content: space-around;
     }
 }
